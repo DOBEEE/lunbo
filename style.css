@@ -1,0 +1,105 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+ul,li{
+	margin:0;
+	padding: 0;
+}
+#container{
+	position: relative;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+#s-list{
+	position: relative;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+#s-list ul{
+	position: relative;
+	width: 100%;
+	height: 520px;
+	
+}
+#s-list ul li{
+	position: absolute;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+#s-list ul li img{
+	position: absolute;
+	left:50%;
+	margin-left: -960px;
+	width: 1920px;
+	height: auto;
+}
+#s-tab{
+	position: absolute;
+	left:50%;
+	bottom: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%) ;
+	-ms-transform: translateX(-50%) ;
+	transform: translateX(-50%);
+	z-index: 99;
+	white-space:nowrap;
+}
+#s-tab ul li{
+	position: relative;
+	top: 31px;
+	width: 200px;
+	height: 100px;
+	margin-left: 2px;
+	overflow: hidden;
+	display: inline-block;
+	border: 2px solid #ccc;
+	color: #737373;
+	transition: all 0.4s;
+}
+#s-tab ul .cur{
+	top:3px;
+	color: #fff;
+	border: 2px solid #fe8e16;
+}
+#s-tab ul li .text{
+	position: absolute;
+	color: inherit;
+	width: 100%;
+	top:0;
+	text-align: center;
+	line-height: 20px;
+}
+#s-tab ul li .text:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+
+}
+#s-tab ul li .text p{
+	position: absolute;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	z-index: 99;
+}
+#s-tab ul li img{
+	width: 100%;
+	height: auto;
+}
